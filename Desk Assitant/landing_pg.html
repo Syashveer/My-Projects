@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syashveer</title>
+    <style>
+        *{
+            text-decoration: none;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .welcome-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: colorChange 4s infinite;
+        }
+
+        .welcome {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: red;
+                background-color: rgb(0, 204, 255);
+            }
+            25% {
+                color: green;
+                background-color: yellow;
+            }
+            50% {
+                color: blue;
+                background-color: red;
+            }
+            75% {
+                color: yellow;
+                background-color: green;
+            }
+            100% {
+                color: red;
+                background-color: rgb(0, 204, 255);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="welcome">
+            <h1>Welcome</h1>
+            <p><h3>Glad To have you here !</h3></p>
+            <a href="./about.html"><h2>LET's START</h2></a>
+        </div>
+    </div>
+</body>
+</html>
